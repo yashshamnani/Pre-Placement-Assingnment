@@ -1,0 +1,1 @@
+Explain Purpose of Try and Catch Block & Why do we need it?

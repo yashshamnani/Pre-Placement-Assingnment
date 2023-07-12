@@ -1,0 +1,26 @@
+what’s async & await Keyword in JavaScript
+async: The async keyword is used to declare an asynchronous function. An asynchronous function returns a promise implicitly, allowing you to use await within the function to pause the execution until a promise is resolved. It allows you to write asynchronous code in a more linear and readable manner, similar to synchronous code.
+await: The await keyword can only be used within an asynchronous function. It is used to pause the execution of the function until a promise is resolved or rejected. The await expression returns the resolved value of the promise. If the promise is rejected, an error is thrown, which can be caught using a try/catch block.
+let fetchAPI = async function(){
+    console.log("Fetching begins")
+    let res = await fetch("https://api.chucknorris.io/jokes/random")
+    let data = await res.json();
+    console.log("data fetched");
+    console.log(data)
+
+}
+fetchAPI()
+
+async function f(){
+    let p = new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+          resolve("true")
+        },1000)
+    })
+
+    console.log("start");
+    let value = await p;
+    console.log(value)
+    console.log("ends")
+}
+f()

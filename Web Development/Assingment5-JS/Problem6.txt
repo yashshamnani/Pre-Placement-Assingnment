@@ -1,0 +1,33 @@
+ What are Promises & Explain Some Three Methods of Promise?
+
+ Promises are the placeholder for certain period of time till we recieve value from an async operation.
+ or we can say that promise are objects which represent eventual completion or failure of an async operation.
+ a promise contain two properties state and result.
+While a Promise object sate is "pending" (working), the result is undefined.
+When a Promise object is "fulfilled", the result is a value.
+When a Promise object is "rejected", the result is an error object.
+ let p = new Promise((resolve,reject)=>{
+    console.log("welcome to Lottery")
+    setTimeout(()=>{
+        if(Math.random()<0.5){
+            resolve("Congratulations You Won")
+        }
+        else{
+            reject(
+                 ("Better Luck next Time"))
+        }
+    },2000)
+ })
+
+ p.then((value)=>{
+    console.log(value)
+ }).catch((data)=>{
+    console.log(data)
+ }).finally(()=>{
+    console.log("You can play once more")
+ })
+
+three commonly used methods associated with Promises:
+then(): The then() method is used to handle the resolved value of a Promise. It takes two arguments: a success callback and an optional error callback. The success callback is executed when the Promise is resolved successfully, receiving the resolved value as its argument. The error callback is executed when the Promise is rejected, receiving the error as its argument.
+catch(): The catch() method is used to handle the rejection of a Promise. It takes an error callback as an argument, which is executed when the Promise is rejected.
+finally(): The finally() method is used to specify a callback that will be executed regardless of whether the Promise is resolved or rejected. It is commonly used to perform cleanup tasks or actions that need to be executed regardless of the Promise's outcome.

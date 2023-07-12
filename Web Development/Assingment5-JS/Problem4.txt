@@ -1,3 +1,5 @@
+how can you handle Async code in JavaScript ?
+
 Callbacks: Callback functions are a traditional way of handling asynchronous code in JavaScript. A callback is a function that is passed as an argument to an asynchronous operation. Once the operation is complete, the callback function is invoked with the result or error. However, working with multiple nested callbacks can lead to callback hell, making the code difficult to read and maintain.
 
 Promises: Promises provide a more structured and readable way to handle asynchronous operations. A promise represents the eventual completion (or failure) of an asynchronous operation and allows you to attach callbacks for handling the success or failure of the operation. Promises have methods like then() and catch() to handle the resolved value or catch errors. Promises can be chained together using then() to perform sequential operations.
