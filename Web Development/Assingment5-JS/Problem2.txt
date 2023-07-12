@@ -1,0 +1,3 @@
+What are Web Apis ?
+
+Web APIs (Application Programming Interfaces) are a set of rules and protocols that allow different software applications to communicate and interact with each other over the internet. Web APIs define a standardized way for applications to request and exchange data, perform actions, and access functionality provided by a web server or a service.

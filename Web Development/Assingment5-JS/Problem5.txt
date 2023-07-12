@@ -1,0 +1,38 @@
+
+Callbacks are functions that are passed as an argument to another function.
+ function add(x,y){
+    return x+y;
+ }
+ function multiply(x,y){
+    return x*y;
+ }
+ function operation(cb,x,y){
+    return cb(x,y);
+ }
+
+console.log(operation(add,2,3));
+console.log(operation(multiply,3,4));
+
+callback hell happens  when you nest callbacks within callbacks many levels deep.
+The shape of callback hell is like a pyramid and is also called the “pyramid of doom”. It makes the code very difficult to maintain and understand. Here's an example of callback hell:
+ 
+ setTimeout(()=>{
+    console.log("one second")
+    setTimeout(()=>{
+        console.log("two second")
+        setTimeout(()=>{
+            console.log("three second")
+            setTimeout(()=>{
+                console.log("four second")
+                setTimeout(()=>{
+                    console.log("five second")
+                    setTimeout(()=>{
+                        console.log("six second")
+                        
+                    },1000)
+                },1000)
+            },1000)
+        },1000)
+    },1000)
+ },1000)
+
