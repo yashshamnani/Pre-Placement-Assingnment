@@ -1,0 +1,19 @@
+ Whats Polymorphism and Purpose of it?
+
+ Polymorphism is a fundamental concept in object-oriented programming (OOP) that allows objects of different classes to be treated as instances of a common superclass or interface. It enables code to be written in a more generic and flexible manner by allowing different objects to be used interchangeably based on their shared behaviors.
+
+The purpose of polymorphism is to promote code reusability, flexibility, and extensibility. It allows developers to write code that can work with objects of different types, as long as they exhibit the same interface or share common behaviors.
+
+Here are some key aspects and purposes of polymorphism:
+
+Code reuse: Polymorphism enables the reuse of code by treating objects of different classes as instances of a common superclass or interface. This allows developers to write generic code that can operate on a wide range of objects, rather than writing separate code for each specific object type.
+
+Flexibility and extensibility: Polymorphism provides flexibility in system design by allowing new classes to be added or existing classes to be modified without requiring extensive changes to the existing codebase. Objects can be extended or derived from a common superclass or interface, and the polymorphic behavior ensures that the existing code can work seamlessly with these new objects.
+
+Interface-based programming: Polymorphism encourages interface-based programming, where the focus is on the behaviors or methods that an object exposes rather than the specific class or implementation details. This promotes loose coupling and better separation of concerns, as different objects can implement the same interface and be used interchangeably.
+
+Method overriding: Polymorphism allows subclasses to provide their own implementations of methods defined in the superclass or interface. This is achieved through method overriding, where a subclass provides a specialized implementation of a method inherited from the superclass. The method to be invoked is determined dynamically at runtime based on the actual object type, allowing for polymorphic behavior.
+
+Dynamic dispatch: Polymorphism involves dynamic dispatch, where the appropriate method implementation is determined at runtime based on the actual type of the object being referenced, rather than the type of the reference variable. This enables the execution of the most appropriate method based on the specific object type, supporting flexibility and adaptability in the code.
+
+Polymorphism plays a crucial role in OOP by allowing objects of different types to be treated uniformly and interchangeably, based on their shared behaviors or interface. It promotes code reuse, flexibility, and extensibility, making software systems more adaptable and maintainable.

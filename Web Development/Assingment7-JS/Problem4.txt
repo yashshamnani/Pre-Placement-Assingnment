@@ -1,0 +1,19 @@
+ Explain OOPS ? 
+
+ Object-oriented programming (OOP) is a programming paradigm that allows developers to organize code into reusable, self-contained objects that encapsulate data and behavior. JavaScript, despite being a prototype-based language, supports several key concepts of OOP.
+
+Here's an overview of OOP in JavaScript:
+
+Objects: Objects are the fundamental building blocks in JavaScript. They are instances of classes or prototypes and can have properties (variables) and methods (functions) associated with them. Objects can be created using object literals or constructor functions.
+
+Classes: JavaScript introduced the class keyword in ECMAScript 2015 (ES6) to provide a more familiar syntax for creating objects and defining their behavior. Classes act as blueprints or templates for creating objects with similar properties and methods. The class syntax helps organize code and promotes object-oriented design principles.
+
+Inheritance: Inheritance allows objects to inherit properties and methods from other objects, enabling code reuse and creating hierarchical relationships. JavaScript uses prototype-based inheritance, where objects can directly inherit from other objects. The extends keyword is used to establish inheritance between classes.
+
+Encapsulation: Encapsulation refers to the bundling of data and related behavior within an object. JavaScript provides various mechanisms for encapsulation, such as using closures, private properties and methods, and getter and setter methods.
+
+Polymorphism: Polymorphism allows objects of different classes to be treated as instances of a common superclass or interface. JavaScript supports polymorphism through dynamic typing and duck typing. Functions can accept different types of objects as arguments and execute different behavior based on the object's properties and methods.
+
+Abstraction: Abstraction involves simplifying complex systems by representing essential features and hiding unnecessary details. In JavaScript, abstraction can be achieved through the use of constructor functions, classes, and interfaces.
+
+By leveraging these concepts, developers can create modular, reusable, and maintainable code in JavaScript. OOP in JavaScript allows for code organization, encapsulation of data and behavior, inheritance, and polymorphism, leading to more structured and scalable applications.

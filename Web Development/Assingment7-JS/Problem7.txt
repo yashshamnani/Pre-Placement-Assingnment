@@ -1,0 +1,17 @@
+ Whats Inheritance and Purpose of it?
+
+ Inheritance is a fundamental concept in object-oriented programming (OOP) that allows objects to acquire properties and behaviors from a parent class or superclass. It enables code reuse, promotes hierarchical relationships, and facilitates the organization and modeling of objects based on their similarities and differences.
+
+The purpose of inheritance is to establish a hierarchical structure among classes, where subclasses inherit and extend the characteristics of their parent class. It helps reduce code duplication, promotes modularity, and enhances code maintainability and extensibility.
+
+Here are some key aspects and purposes of inheritance:
+
+Code reuse: Inheritance allows subclasses to inherit properties and methods from a parent class. This promotes code reuse by avoiding the need to duplicate code across multiple classes. Common functionalities or attributes can be defined in a superclass, and subclasses can inherit and reuse them as needed.
+
+Hierarchy and specialization: Inheritance supports the creation of hierarchical relationships among classes, enabling the organization of objects based on their similarities and differences. Subclasses can specialize or extend the behavior of their parent class, adding additional properties or methods that are specific to their own context.
+
+Modularity and abstraction: Inheritance promotes modularity and abstraction by allowing the grouping of related classes into a hierarchical structure. Superclasses encapsulate common behavior and provide a generalized interface, while subclasses provide specialized behavior that is unique to them. This abstraction helps manage complexity and improves code organization.
+
+Overriding and polymorphism: Inheritance facilitates method overriding, where a subclass provides its own implementation of a method inherited from the superclass. This allows subclasses to modify or extend the behavior of inherited methods. Polymorphism, enabled by inheritance, allows objects of different classes to be treated as instances of a common superclass, providing flexibility and interchangeable usage.
+
+Extensibility: Inheritance supports the extensibility of software systems. New subclasses can be created to extend or specialize the functionality of existing classes without modifying the original class. This promotes the Open-Closed Principle, which states that software entities should be open for extension but closed for modification.

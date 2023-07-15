@@ -1,0 +1,18 @@
+  Difference between class & function based component
+
+  In React, there are two primary ways to create components: class-based components and function-based components. Both approaches allow you to create reusable building blocks for UI, but they differ in terms of syntax, usage, and available features.
+
+Here are the key differences between class-based components and function-based components in React:
+
+Syntax:
+
+Class-based components: Class-based components are defined as JavaScript classes that extend the React.Component base class. They use the render() method to return JSX to describe the component's structure. Additional lifecycle methods, such as componentDidMount() and componentDidUpdate(), can be implemented for more fine-grained control over component behavior.
+Function-based components: Function-based components are defined as JavaScript functions that accept props as arguments and return JSX to describe the component's structure. They can be simple stateless components that only rely on props or can utilize React Hooks (introduced in React 16.8) to manage state, handle lifecycle effects, and access other features.
+State and Lifecycle:
+
+Class-based components: Class components have their own internal state, managed through this.state and updated using this.setState(). They can utilize lifecycle methods like componentDidMount(), componentDidUpdate(), and componentWillUnmount() to handle side effects, subscriptions, and cleanup operations.
+Function-based components: Initially, function components were stateless and did not have their own internal state. However, with the introduction of React Hooks, function components can now utilize state and lifecycle functionality using hooks like useState, useEffect, useContext, etc. Hooks enable functional components to manage state and handle lifecycle effects without needing to write class components.
+Usage and Recommendation:
+
+Class-based components: Class components were the primary way of creating components in earlier versions of React. They are still widely used, especially in legacy codebases or projects that have not migrated to newer versions of React. Class components provide access to the full range of React features, making them suitable for complex components with more advanced requirements.
+Function-based components: Function components have become more popular and recommended in recent versions of React, particularly with the introduction of React Hooks. They are simpler, easier to read, and write. Functional components with hooks are suitable for most use cases, as they offer a more straightforward and concise way to handle state and lifecycle effects.

@@ -1,0 +1,19 @@
+ Whats Abstraction and Its Purpose?
+
+ Abstraction is a fundamental concept in object-oriented programming (OOP) that involves simplifying complex systems by representing essential features and hiding unnecessary details. It allows developers to focus on the essential aspects of an object or system while hiding the implementation details.
+
+The purpose of abstraction is to provide a high-level view or interface that enables interaction with an object or system without exposing its internal complexities. It helps manage complexity, improve code maintainability, and facilitate code reuse.
+
+Here are some key aspects and purposes of abstraction:
+
+Simplification: Abstraction simplifies the understanding and usage of complex systems by focusing on the most relevant and essential aspects. It allows developers to work with a simplified representation that hides unnecessary details, making it easier to comprehend and work with.
+
+Hiding implementation details: Abstraction enables the hiding of internal implementation details and exposing only the necessary information or functionalities. It allows users or other parts of the code to interact with the abstraction without needing to understand the underlying complexity. This improves security and prevents unintended misuse of the system.
+
+Encapsulation: Abstraction often goes hand-in-hand with encapsulation. Encapsulation refers to bundling related data and behavior within an object or module, while abstraction focuses on providing a simplified interface to interact with that object or module. By encapsulating implementation details, abstraction promotes better code organization and modularization.
+
+Code maintainability: Abstraction enhances code maintainability by reducing dependencies on specific implementation details. If the underlying implementation changes, the external code that relies on the abstraction does not need to be modified as long as the abstraction remains intact. This decoupling simplifies maintenance and allows for easier updates or improvements in the future.
+
+Code reusability: Abstraction promotes code reusability by providing a standardized interface that can be utilized in different contexts. By abstracting away implementation details, common functionalities or patterns can be encapsulated in reusable modules or classes. This reduces duplication of code and improves development efficiency.
+
+Focus on essential aspects: Abstraction allows developers to focus on the essential aspects of an object or system, abstracting away the irrelevant details. By providing a simplified and well-defined interface, developers can work at a higher level of abstraction, which aids in problem-solving and system design.

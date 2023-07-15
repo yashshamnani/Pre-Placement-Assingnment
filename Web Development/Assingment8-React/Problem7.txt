@@ -1,0 +1,30 @@
+ Explain Prop Drilling in React & Ways to avoid it
+
+ Prop drilling in React refers to the process of passing props through multiple layers of components, even when some intermediary components do not directly use or modify those props. It can occur when a prop needs to be passed from a top-level component down to a deeply nested component that requires access to that prop.
+
+While prop drilling can work, it can become cumbersome and lead to less maintainable code as the application grows. It introduces unnecessary coupling between components and can make it harder to understand the flow of data.
+
+To avoid prop drilling, you can utilize some techniques and patterns in React:
+
+Context API:
+
+React's Context API allows you to create a global state or shared data that can be accessed by components at different levels in the component tree without the need for explicit prop passing.
+By defining a context provider and consumer, you can wrap your component tree with the provider and access the context values directly from any consumer component within that tree.
+Redux or other state management libraries:
+
+State management libraries like Redux provide a centralized store to manage the application state.
+Instead of passing props down the component tree, you can dispatch actions to update the store, and any component that needs access to that state can subscribe to it directly from the store.
+React Router:
+
+If prop drilling is primarily occurring due to the need to pass props to components rendered by React Router, you can utilize route parameters or query parameters to pass data between components.
+With route parameters, you can define dynamic segments in the route path and extract the values in the rendered component.
+With query parameters, you can include data in the URL and access it using React Router's useLocation or withRouter hooks.
+Component composition:
+
+Instead of passing props through multiple layers, you can compose your components in a way that reduces the need for prop drilling.
+Group related components together, create container components that fetch data and pass it to presentational components, or use render props or higher-order components to inject specific props to the components that need them.
+React Hooks:
+
+With the introduction of React Hooks, functional components can now have state and access to lifecycle methods, reducing the reliance on class-based components and the need for prop drilling.
+Hooks like useState and useEffect allow you to manage state and handle side effects directly within functional components.
+By applying these techniques, you can minimize or eliminate the need for prop drilling in your React applications. They promote a more modular, decoupled, and scalable architecture, where components can access the data they need without the burden of passing unnecessary props through intermediary components.

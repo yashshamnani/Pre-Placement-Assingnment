@@ -1,0 +1,41 @@
+ Whats component? Types of component
+
+ In the context of front-end web development and frameworks like React, a component is a self-contained, reusable building block that encapsulates a portion of the user interface (UI) and its associated logic. Components are used to structure and compose the UI of a web application.
+
+Types of Components:
+
+Functional Components:
+Also known as Stateless Components or Presentational Components.
+Defined as JavaScript functions that accept props (input data) as arguments and return JSX (the UI representation) to describe the component's structure.
+Do not have their own internal state.
+Suitable for simple UI elements or components that primarily render UI based on props.
+function Greeting(props) {
+  return <h1>Hello, {props.name}!</h1>;
+}
+
+Class Components:
+Also known as Stateful Components or Container Components.
+Defined as JavaScript classes that extend the React.Component base class.
+Implement a render() method that returns JSX to define the component's structure.
+Can have their own internal state and lifecycle methods.
+Suitable for components that need to manage and update their own state, handle user interactions, or implement lifecycle functionality.
+
+class Counter extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { count: 0 };
+  }
+
+  incrementCount() {
+    this.setState({ count: this.state.count + 1 });
+  }
+
+  render() {
+    return (
+      <div>
+        <p>Count: {this.state.count}</p>
+        <button onClick={() => this.incrementCount()}>Increment</button>
+      </div>
+    );
+  }
+}

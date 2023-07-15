@@ -1,0 +1,24 @@
+ Explain react component life cycle 
+
+ In React, component lifecycle refers to the various stages a component goes through from its initialization to unmounting. Each stage of the lifecycle provides specific hooks or methods that allow you to perform actions and handle certain events during the component's lifespan.
+
+Here is an overview of the React component lifecycle stages and their associated methods or hooks:
+
+Mounting Phase:
+
+constructor(): This is the first method called when a component is being initialized. It is used to set up the component's initial state and bind event handlers.
+render(): This method is responsible for rendering the component's UI based on the current state and props. It returns JSX or null.
+componentDidMount(): This method is invoked immediately after the component has been mounted (i.e., inserted into the DOM). It is often used to initialize third-party libraries, fetch data from an API, or set up event listeners.
+Updating Phase:
+
+render(): This method is called whenever the component's state or props change. It re-renders the component's UI based on the updated data.
+componentDidUpdate(prevProps, prevState): This method is triggered immediately after a component update and receives the previous props and state as arguments. It is used to perform actions based on the updated data, such as making API calls or updating the DOM.
+Unmounting Phase:
+
+componentWillUnmount(): This method is called right before a component is unmounted and removed from the DOM. It allows you to perform any necessary cleanup, such as removing event listeners or canceling subscriptions.
+In addition to the above methods, React also provides hooks to handle component lifecycle events in function components:
+
+useEffect(): This hook combines the functionalities of componentDidMount, componentDidUpdate, and componentWillUnmount. It allows you to perform side effects, such as fetching data, subscribing to events, or setting up timers. The hook is executed after every render cycle and can be used to manage cleanup as well.
+It's important to note that some lifecycle methods have been deprecated or will be deprecated in future versions of React. The introduction of React Hooks has provided a more concise and flexible way to handle component lifecycle events in function components.
+
+Understanding the component lifecycle in React helps you control the behavior of your components and execute specific actions at different stages of their existence. It enables you to manage state, fetch data, set up subscriptions, and perform other necessary operations for your components to function properly.
