@@ -1,0 +1,15 @@
+  How to pass data from one component to another component
+
+  In React, there are several ways to pass data from one component to another component. The approach you choose depends on the relationship between the components and the complexity of the data being passed.
+
+Here are some common methods for passing data between components in React:
+
+Props:
+
+The most straightforward way to pass data is through props. You can pass data from a parent component to a child component by including the data as attributes in the JSX when rendering the child component.
+The child component can access the passed data through the props object.
+
+Context API:
+
+The Context API is useful when you want to pass data to multiple levels of nested components without explicitly passing props through each intermediate component.
+You can create a context using React.createContext and provide a value to it using a provider component. Child components can access the provided value using a consumer component or the useContext hook.
