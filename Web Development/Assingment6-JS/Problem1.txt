@@ -1,0 +1,17 @@
+ What’s Constructor And Its Purpose?
+ 
+ In object-oriented programming, a constructor is a special method within a class that is used to initialize objects of that class. It is called automatically when an object is created from the class, and its purpose is to set the initial state and perform any necessary setup or initialization tasks.
+
+Here are some key aspects of constructors and their purpose:
+
+Object initialization: Constructors are responsible for initializing the object's state or attributes. They define the initial values of the object's properties, ensuring that the object starts in a valid and consistent state. By setting the initial values within the constructor, objects can be created with the required data.
+
+Method declaration: In many programming languages, a constructor is declared using the same name as the class and does not have a return type. It may accept parameters that allow you to pass initial values to the object's properties or perform specific initialization logic based on the provided arguments.
+
+Automatic invocation: When an object is created using the new keyword, the constructor is automatically invoked to initialize the object. The constructor is called once and only once for each object being created.
+
+Customization and overloading: Constructors can be customized to accept different sets of parameters or implement different initialization logic. This allows for multiple constructors within a class, known as constructor overloading. Overloaded constructors enable flexibility in object creation and provide different ways to initialize objects based on specific requirements.
+
+Inheritance and super constructors: In an inheritance hierarchy, constructors play a role in the creation of derived classes. A derived class constructor can invoke the constructor of its parent class, known as the super constructor, to ensure that the inherited properties are properly initialized.
+
+The purpose of constructors is to ensure that objects are created with the necessary initial state and perform any setup tasks required for the object to function correctly. Constructors provide a convenient and standardized way to initialize objects, making object creation more manageable and ensuring the object's properties are properly set before they are used.

@@ -1,0 +1,18 @@
+ Whats Encapsulation and Purpose of it ?
+
+ Encapsulation is a fundamental concept in object-oriented programming (OOP) that involves bundling related data (properties) and behavior (methods) together within an object, and controlling access to them. It aims to hide internal implementation details and provide a well-defined interface for interacting with the object.
+
+The purpose of encapsulation is to achieve data integrity, code organization, information hiding, and abstraction. It promotes modular and maintainable code by establishing clear boundaries between different components of a system.
+
+Here are some key aspects and purposes of encapsulation:
+
+Data protection and integrity: Encapsulation allows you to protect the internal state of an object by hiding the implementation details and providing controlled access to the object's properties. By encapsulating data within the object and providing methods to access and modify it, you can enforce data integrity rules, validate inputs, and prevent direct manipulation of the object's internal state.
+
+Information hiding: Encapsulation supports information hiding by exposing a well-defined public interface while hiding the internal implementation details. The internal representation and workings of an object are encapsulated, making it easier to change or modify the implementation without affecting other parts of the code that rely on the object.
+
+Code organization and modularity: Encapsulation facilitates code organization by bundling related data and behavior within a single object. This helps improve code modularity, as you can group related properties and methods together, promoting better organization and maintainability of the codebase.
+
+Abstraction: Encapsulation promotes abstraction by providing a simplified and well-defined interface for interacting with an object. The object's internal details are hidden, and only the essential features and behaviors are exposed, allowing users to work with the object without needing to know its internal complexities.
+
+Access control: Encapsulation enables you to control access to an object's properties and methods. By defining access modifiers such as public, private, and protected, you can specify which parts of the object's state and behavior are accessible from outside the object. This ensures that the object's internal state remains consistent and that interactions with the object are controlled.
+

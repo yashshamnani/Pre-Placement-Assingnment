@@ -1,0 +1,9 @@
+ What’s Call Apply Bind Method & Difference Between them
+
+ In JavaScript, call, apply, and bind are methods that allow you to explicitly set the value of this within a function and invoke the function in a specific context. While they serve a similar purpose, there are differences in how they are used and how they handle function arguments.
+
+call: The call method is used to invoke a function with a specified value for this and individual arguments passed as comma-separated values. It accepts the this value as the first argument, followed by the function arguments. 
+
+apply: The apply method is similar to call but accepts the this value as the first argument and an array (or an array-like object) of arguments as the second argument. It allows you to pass an array of arguments to the function.
+
+bind: The bind method returns a new function with a specific value for this and, if provided, pre-filled arguments. It allows you to create a new function that, when invoked, will have a fixed this value.  

@@ -1,1 +1,28 @@
  Explain fetch
+
+ The term "fetch" refers to a web API (Application Programming Interface) method used in JavaScript to make network requests and retrieve resources from a server. It provides a modern and flexible way to perform HTTP requests, such as retrieving data from an API or sending data to a server.
+
+ The fetch() function is built into modern web browsers and is often used in client-side JavaScript code to interact with server-side APIs. Here's a basic overview of how fetch works:
+
+Making a request: To fetch a resource, you provide a URL (Uniform Resource Locator) as the first argument to the fetch() function. This URL specifies the location of the resource you want to retrieve.
+
+Sending the request: By default, fetch() sends a GET request to the specified URL. However, you can customize the request by providing additional parameters in an optional second argument, such as specifying the HTTP method (e.g., POST, PUT, DELETE), adding headers, or sending data.
+
+Handling the response: The fetch() function returns a Promise that resolves to a Response object. You can use Promise-based methods like .then() and .catch() to handle the response. The Response object represents the HTTP response from the server and provides methods to access the response data, headers, status code, and more.
+
+Parsing the response: Depending on the response type and content, you need to extract the desired data from the response. Commonly, you use methods like .json(), .text(), or .blob() on the Response object to extract the data in the desired format (JSON, plain text, binary data, etc.).
+
+Fetch also supports handling errors using the .catch() method on the Promise, which allows you to handle any network errors or failed requests.
+
+let p = fetch("https://api.chucknorris.io/jokes/random")
+ console.log(p);
+ p.then((response) => {
+         // console.log(response.status)
+         // console.log(response.ok)
+         // console.log(response.headers)
+         // console.log(response);
+         console.log(response);
+         return  response.json()
+ }).then((value2) => {
+         console.log(value2.value)
+ })

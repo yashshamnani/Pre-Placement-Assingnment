@@ -1,0 +1,3 @@
+ Explain Class in JavaScript?
+
+ In JavaScript, the class keyword introduced in ECMAScript 2015 (ES6) provides a more familiar syntax for creating objects and defining their behavior. It allows you to define a blueprint or template for creating objects with similar properties and methods.
